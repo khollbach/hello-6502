@@ -1,4 +1,11 @@
+#![no_std]
+
 use core::ptr;
+
+#[no_mangle]
+pub extern "C" fn rust_main() {
+    main()
+}
 
 fn main() {
     for a in 0x400..0x800 {
